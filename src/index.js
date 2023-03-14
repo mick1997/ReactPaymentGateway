@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { HomePage } from './pages/Home';
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom"
 import { ProductsDetail } from './pages/ProductsDetail';
-import { Checkout } from './pages/checkout/Checkout';
+
 
 const router = createBrowserRouter([
   {
@@ -26,16 +26,7 @@ const router = createBrowserRouter([
           <Link to="/"></Link>
         </>
     )
-  },
-  {
-    path: "/checkout/:checkoutId",
-    element: (
-        <>
-          <Checkout></Checkout>
-          <Link to="/checkout/:checkoutId"></Link>
-        </>
-    )
-  },
+  }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
